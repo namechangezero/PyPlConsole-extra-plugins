@@ -14,7 +14,7 @@ class main:
             print("Only availible for Windows. Linux and MacOS coming in future!")
             return
 
-        if not check_output(["java","-version"],stderr=STDOUT).startswith(b"java"):
+        if not check_output(["java","-version"],stderr=STDOUT,shell=True).startswith(b"java"):
             print("Please install Java first, and then install again")
             download_link_java = "https://www.java.com/de/download/"
             open_browser(download_link_java)
