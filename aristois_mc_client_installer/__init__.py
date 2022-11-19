@@ -5,7 +5,7 @@ from requests import get
 from os import getcwd, remove, path
 class main:
     was_run = False
-    def __init__(self, pluginDir, startDir) -> None:
+    def __init__(self, pluginDir, startDir,*a) -> None:
         self.download_url_aristois="https://gitlab.com/Aristois/ui-installer/-/jobs/2505715157/artifacts/raw/packager/Aristois-Free.jar"
         self.dir = getcwd()
 

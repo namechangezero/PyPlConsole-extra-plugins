@@ -1,7 +1,7 @@
 from os import listdir, path
 from colorama import init as init_colorama, Fore
 class main:
-    def __init__(self, moduleDir, startDir) -> None:
+    def __init__(self, moduleDir, startDir,*a) -> None:
         init_colorama()
 
     def oncmd(self, command):
